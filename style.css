@@ -1,0 +1,508 @@
+*{ margin: 0px; padding: 0px; box-sizing: border-box;}
+a{ text-decoration: none;}
+li{ list-style: none;}
+body{font-family:Verdana, Geneva, Tahoma, sans-serif;
+line-height: 19px;
+}
+
+p{ font-size: 15px;
+font-weight: normal;
+font-family:Georgia, 'Times New Roman', Times, serif;}
+
+
+.header
+{
+width:100%;
+height:100vh;
+background-image: linear-gradient(rgba(0,168,255,0.3),rgba(0,168,255,0.3)),url("a.jpg");
+background-repeat:no-repeat;
+background-size: 100% 100%;
+position: relative;
+clip-path: polygon(100% 0%,100% 77%,50% 100%,0% 75%,0% 0%);
+
+}
+
+.header::before
+{   content:"";
+    position: absolute;
+    top:0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background:linear-gradient(to right, rgb(24, 163, 163),aqua);
+    opacity: 0.1;
+    z-index: -1;
+}
+.navbar::before
+{
+    content:"";
+    position: absolute;
+    top:0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background:linear-gradient(to right,rgb(7, 153, 153), rgb(24, 163, 163),aqua);
+    opacity: 0.7;
+    z-index: -1;
+}
+.nav-item a,.navbar-brand
+{
+    color: white!important;
+    font-weight: bold;
+}
+
+.nav-item a:hover
+{
+    color: black !important;
+
+}
+
+.header1
+{
+    width: 100%;
+    height: inherit;
+    color:white;
+    text-align: center;
+    position: relative;
+}
+.header1 .centerdiv
+{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.header1 .headerbutton a
+{
+border: 2px solid white;
+margin: 0px 5px;
+color:white;
+padding: 1px 14px;
+font-size: 20px;
+font-weight: bold;
+border-radius: 100px;
+
+
+}
+.header1 .headerbutton  :hover
+{background-color: #fff;
+    color: #000;
+    text-decoration:none;
+    box-shadow: 2px 2px 10px gray;
+    
+
+}
+/* 3 careds starts */
+
+.header-extradiv
+{
+
+    width: 100%;
+    height: max-content;
+    margin: 100px 0px;
+    text-align: center;
+}
+.header-extradiv  .div1
+{
+    background-color: #fff;
+    border: 20px solid white;
+   
+    margin:auto;
+    transition: 0.5sec;
+    
+}
+
+.header-extradiv .div1:hover
+{ box-shadow: 0 0 20px 0  rgba(0,0,0,0.3);
+  transform: translateY(-40PX);
+}
+.header-extradiv .div1 a i{
+    color:rgb(21, 224, 224);
+    font-size:40px;
+}
+.header-extradiv  .div1 h2{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 35px;
+}
+
+
+/* offers stsrt........ */
+
+
+.serviceoffer .container .what {
+    line-height: 50px;
+}
+.serviceoffer .container span{
+    color:rgb(10, 223, 223);
+}
+.serviceoffer .container .para
+{
+
+
+text-align: center;
+    font-weight: normal;
+    font-size:15px;
+    line-height: 5px;
+}
+
+.submain{
+    background-color
+    :whitesmoke;
+    margin-top: 30px;
+}
+.bar h4 { font-size: 15px;
+font-weight:bold;
+margin-top: 20px;
+
+}
+
+/* bar end */
+/* iconsides */
+.sub2
+{
+    border-left: 10px solid whitesmoke;
+    margin-top: 20px;
+    height:380px;
+}
+.icon1{
+    margin-top: 20px;
+    padding: 0px;
+
+   
+}
+.icon1 i{
+    color:rgb(7, 228, 228);
+    font-size: 25px;
+    margin-top: 5px;
+    padding: 0px;
+}
+.icon1 i:hover{
+    color:black;
+}
+
+.icon1 h4{
+    font-size: 16px;
+    font-weight:bold;
+
+    
+
+}
+.icon1 p{
+    font-size: 12px;
+    text-align: center;
+    line-height: 15px;
+    
+    
+}
+
+/* bar and icon end */
+
+/* project done start */
+
+.projectdone .container
+{
+    margin-top: 50px;
+}
+
+.projectdone .container h2{
+    font-size:25px;
+}
+
+.projectdone .container h2 span{
+    color:rgb(4, 196, 196);
+}
+
+.number
+{
+    text-align: center;
+    transition: 0.5 sec;
+
+}
+
+.number .cms  .value
+{
+    margin-top: 30px;
+    padding:10px 1px;
+    text-align:center;
+}
+.number .cms  .value:hover{
+    color:rgb(8, 167, 167);
+    
+    transform: translatey(-20px);
+    box-shadow: 0px 4px 10px 0 gray;
+}
+
+
+/* project done end */
+
+/* our best prizing start */
+
+ .price 
+{ background:linear-gradient(170deg,rgb(10, 231, 231)55%,white 50%);
+
+    z-index: -1;
+    height: auto;
+
+    position:relative;
+}
+.price h2{
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+.card
+{transition:0.4 ease;
+    box-shadow: 4px 4px 10px gray;
+
+}  
+
+.card :hover
+{
+box-shadow: 0 0 20px 0  rgba(0,0,0,0.3);
+transform: translateY(-40PX);
+}
+
+.price .card-header
+{
+    background-color: #fff;
+    font-size: 18px;
+    font-weight:bold;
+    padding:30px 0px;
+}
+
+.price .card-body li
+{
+font-weight: normal;
+font-size: 15px;
+padding:5px 0px;
+
+}
+
+
+.price .card-body li span
+{ font-size: 30px;
+color:rgb(5, 202, 202);}
+
+.price .card-footer a
+{
+
+    font-size: 18px;
+    font-weight:bold;
+    border:4px solid rgb(11, 218, 218);
+    background-color:rgb(6, 197, 197);
+    border-radius: 10px;
+    padding:8px 10px;
+    text-decoration: none;
+    color:white !important;;
+    
+
+}
+.price .card-footer
+{background-color:white!important;
+    font-size: 18px;
+    font-weight:bold;
+    padding:30px 0px;
+
+}
+/* hppy client start */
+
+
+
+.happyclient h2{
+    font-size: px;
+    font-weight: bolder;
+}
+
+.happyclient h2 span{
+    color: turquoise;
+}
+
+.box
+{
+    padding:30px 5px;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px gray;
+    transition: 0.3s;
+}
+.box:hover
+{ background-color: rgb(13, 231, 231);
+    transform: translateY(-30px);
+    border-radius: 10px;
+    box-shadow:2px 2px 15px rgb(5, 102, 102);
+}
+
+.box  img {
+    border:1px solid black;
+    border-radius: 50%;
+}
+
+.box h4{
+    font-weight: normal;
+}
+
+.box:hover>h4
+{
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.box h5{
+    font-size: 15px;
+    font-weight: bolder}
+
+/* happy client end */
+.color 
+{
+    width:100%;
+height: 100vh;
+    position: relative;
+    padding:80px;
+    background: linear-gradient(160deg,white 55%,rgb(36, 243, 243) 55%);
+
+}
+
+
+
+
+
+.color h2
+{font-weight: bolder;
+    font-size: 35px;
+
+} 
+button
+{
+    position: relative;
+ left:0%;
+    padding: 15px 100px;
+    font-weight: bolder;
+
+}
+
+/* contact us end */
+
+
+/* news start */
+.news
+{
+    width: 100%;
+    height: auto;
+    
+}
+.news h2{font-weight: bolder;
+    margin-top: 170px;
+    font-size: 35px;
+
+}
+
+.news h2 span{
+    color: rgb(12, 199, 199);
+    margin-top: 30px;
+}
+
+
+.input-group-text
+{color: white;
+    font-weight: bolder;
+    background-color:rgb(7, 223, 223);
+}
+
+.input-group-text:hover
+
+{
+    background-color:black;
+}
+
+.input-group:hover
+{border:2px solid aqua;
+
+}
+
+/* footer start */
+
+.footer{
+    background-color:rgb(4, 160, 160);
+margin-top: 200px!important;
+color:white;
+width:100%;
+height: max-content;
+padding:40px 0px  40px 0px;
+
+}
+.footer h5{
+    margin-bottom: 20px;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.footer h5:hover
+{
+    color: black;
+    text-shadow: 2px 2px 2px gray ;
+}
+
+.footer p:hover
+{
+color:aqua;
+}
+.footer p
+{
+    line-height: 25px;
+    width:300px;
+    margin-bottom: 20px;
+}
+
+.footer  ul li {
+    display:block;
+    line-height: 30px;
+}
+.col{margin-right: 0px;
+
+}
+.footer  ul li:hover
+{
+    color:aqua;
+    font-weight: bolder;
+}
+
+.footer button
+{background-color:white;
+    position: relative;
+    left:8px;
+
+
+
+}
+.footer button:hover
+{
+    background-color:black;
+    color: white;
+    border:none;
+}
+/* footer end*/
+ .last .container-fluid{
+    color:white;
+    text-align: center;
+    background:black;
+    padding:10px;
+    width: 100%;
+    
+}
+ .last .container-fluid h6
+{
+    text-align: center;
+    font-weight: normal;
+    
+}
+
+@media(max-width:500px)
+{
+    .inpput
+    { 
+       width:15rem;
+       margin-left: -4rem;
+
+     } 
+}
